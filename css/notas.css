@@ -1,0 +1,152 @@
+/* ================================================
+   notas.css — Estilos específicos del módulo Notas
+   ================================================ */
+
+/* Galería de fotos */
+.galeria-fotos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin: 16px 0;
+}
+
+.foto-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.img-pequena {
+    width: 100%;
+    max-width: 220px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid var(--border);
+    transition: all 0.3s;
+}
+
+.img-pequena:hover {
+    border-color: var(--primary);
+    transform: scale(1.03);
+}
+
+.img-click {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.img-click:hover {
+    transform: scale(1.05);
+}
+
+/* Archivos adjuntos */
+.archivo-adjunto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f1f5f9;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px dashed var(--primary);
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    width: 100%;
+    max-width: 220px;
+}
+
+/* Botón descargar */
+.btn-descargar {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--primary);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-descargar:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+/* Nota card específico */
+.nota-card {
+    border-left: 5px solid var(--secondary);
+}
+
+.nota-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.nota-header h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+/* Galería en preview */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 12px 0;
+}
+
+.galeria a.archivo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f1f5f9;
+    padding: 10px 16px;
+    border-radius: 10px;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.galeria a.archivo:hover {
+    background: #e2e8f0;
+}
+
+/* Botón eliminar */
+.btn-eliminar {
+    background: var(--danger);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+    margin-top: 10px;
+}
+
+.btn-eliminar:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}

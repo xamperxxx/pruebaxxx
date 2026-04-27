@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolDuty - Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo">SchoolDuty</div>
+        <nav>
+            <ul id="menu"></ul>
+        </nav>
+        <button class="logout" onclick="cerrarSesion()">🚪 Cerrar sesión</button>
+    </aside>
+
+    <!-- CONTENIDO -->
+    <main class="main">
+        <header class="topbar">
+            <h2 id="bienvenida">Bienvenido</h2>
+        </header>
+        <div class="content" id="content-area">
+            <!-- Se carga dinámicamente -->
+        </div>
+    </main>
+</div>
+
+<!-- Toast container -->
+<div id="toast-container"></div>
+
+<!-- Modal global -->
+<div id="modal-global" class="modal" style="display:none;">
+    <span class="cerrar-modal" onclick="cerrarModalGlobal()">&times;</span>
+    <img id="img-global" alt="">
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/notas.js"></script>
+<script src="js/comportamiento.js"></script>
+<script src="js/cuenta.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+/* ================================================
+   cuenta.css — Estilos específicos del módulo Cuenta (Perfil + Hijos)
+   ================================================ */
+
+/* Wrapper principal */
+.cuenta-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Card de perfil */
+.cuenta-card {
+    background: var(--card);
+    border-radius: var(--radius-lg);
+    padding: 40px 48px;
+    box-shadow: var(--shadow-lg);
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.cuenta-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--secondary), var(--accent));
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(78,115,223,0.25);
+}
+
+.cuenta-nombre {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.cuenta-curso {
+    font-size: 1rem;
+    color: var(--secondary);
+    font-weight: 600;
+    background: #eaf0ff;
+    padding: 5px 18px;
+    border-radius: 20px;
+}
+
+.cuenta-rol-badge {
+    background: var(--accent);
+    color: white;
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.cuenta-info {
+    width: 100%;
+    border-top: 1px solid var(--border);
+    margin-top: 16px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cuenta-fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f8fafc;
+    border-radius: 10px;
+}
+
+.cuenta-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+.cuenta-valor {
+    font-size: 1rem;
+    color: var(--text);
+    font-weight: 700;
+}
+
+.cuenta-pass {
+    letter-spacing: 4px;
+    color: #aaa;
+}
+
+/* Sección de hijos */
+.hijos-section {
+    width: 100%;
+    max-width: 700px;
+}
+
+.hijos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.hijos-header h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.hijos-count {
+    background: var(--secondary);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.hijos-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hijo-card {
+    background: var(--card);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s;
+    border-left: 5px solid var(--secondary);
+}
+
+.hijo-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+.hijo-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--secondary), var(--accent));
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.hijo-info {
+    flex: 1;
+}
+
+.hijo-info h4 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
+.hijo-badges {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.badge-grado {
+    background: #eaf0ff;
+    color: var(--secondary);
+}
+
+.badge-seccion {
+    background: #e6fff5;
+    color: var(--accent);
+}
+
+.hijo-dni {
+    color: var(--text-light);
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.sin-hijos {
+    text-align: center;
+    color: var(--text-light);
+    font-style: italic;
+    padding: 40px;
+    font-size: 1.1rem;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolDuty - Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="login-page">
+
+<div class="login-wrapper">
+    <div class="login-info">
+        <div class="info-content">
+            <h1>SchoolDuty</h1>
+            <p>Plataforma de Gestión Educativa. Conectando a profesores y padres de familia para un mejor futuro académico.</p>
+        </div>
+    </div>
+
+    <div class="login-form-section">
+        <div class="form-container">
+            <div class="logo-box">
+                <img src="img/logo.png" alt="Logo Colegio" class="logo-img">
+            </div>
+
+            <h2>Iniciar Sesión</h2>
+            <p class="subtitle">Ingresa tus credenciales para continuar</p>
+
+            <form id="loginForm">
+                <div class="input-group">
+                    <label>Usuario</label>
+                    <input type="text" id="usuario" placeholder="Ej: 1001, jrubio, admin" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Contraseña</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                </div>
+
+                <button type="submit" class="btn-login">Ingresar al sistema</button>
+            </form>
+
+            <p id="error"></p>
+            
+            <div class="login-hint">
+                <small>💡 El sistema detectará tu rol automáticamente</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

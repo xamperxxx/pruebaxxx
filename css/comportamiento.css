@@ -1,0 +1,101 @@
+/* ================================================
+   comportamiento.css — Estilos específicos del módulo Comportamiento
+   ================================================ */
+
+/* Card de mensaje */
+.card-msg {
+    background: var(--card);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow);
+    border-left: 5px solid var(--accent);
+    transition: all 0.3s ease;
+}
+
+.card-msg:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Header del mensaje */
+.header-msg {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.header-msg .nota-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.header-msg .nota-header h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+/* Mensaje */
+.mensaje {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text);
+    margin-top: 10px;
+}
+
+/* Separador */
+.separador {
+    margin: 28px 0;
+    border: none;
+    border-top: 2px dashed var(--border);
+}
+
+/* Header simple */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.header h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* Detalle */
+.detalle {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Textarea de comportamiento */
+#msgComp.mensaje {
+    width: 100%;
+    height: 120px;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1.5px solid var(--border);
+    margin: 12px 0;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+#msgComp.mensaje:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(30,58,138,0.1);
+}
